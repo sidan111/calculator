@@ -1,4 +1,4 @@
-#ch 6.4.1 cirl.py
+#ch 6.4.4 cirl.py
 
 class Control:
     def __init__(self, view):
@@ -13,4 +13,7 @@ class Control:
         self.view.btn2.clicked.connect(self.view.clearMessage)
 
     def sum(self, a, b):
-        return a+b    
+        try:
+            return str(a+b)
+        except:
+            return "Calculation Error"    
