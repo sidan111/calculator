@@ -1,3 +1,5 @@
+#ch 6.2.2 cirl.py
+
 class Control:
     def __init__(self, view):
         self.view = view
